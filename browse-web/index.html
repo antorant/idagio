@@ -27,13 +27,20 @@ h2, p, ol {
   max-width: 40rem;
   text-align: left;
 }
+
+p.large { font-size: 1.25rem; }
+
   </style>
 </head>
   <body>
     <h1>IDAGIO / Browse (Web)</h1>
 
+    <p class="large">I led an initiative to improve the neglected Browse experience on the IDAGIO web product, despite limited engineering resources, by producing compelling prototypes and collaborating with our in-house classical music experts.</p>
+
     <h2>Problem:</h2>
-    <p>The "Browse" screen was the second most-viewed screen in the web application, but had remained in MVP form — a static list of six composers and six performers — for a long time.</p>
+    <p>The "Browse" screen was the second most-viewed screen in the web application, but had remained in MVP form — a short, static, hard-coded list of mainstream composers and performers — since the initial launch of the app.</p>
+    <p>IDAGIO's focus on growth, onboarding and first-time experience meant that the deeper aspects of the product — aspects which embodied the real value of the platform — were rarely the focus of our efforts. There were often conversations about improving the Browse experience with contextual search or personalised recommendations, but these were always negated by a lack of back-end resources or the infeasibility of cross-platform collaboration.</p>
+    <p>I knew that we could make a significant improvement to the screen just by increasing the number of links to artists and music. Given my familiary with the web codebase, I knew that the development work would be manageable if the layout and content were clearly defined.</p>
 
     <h2>Goals:</h2>
     <ol>
@@ -42,18 +49,37 @@ h2, p, ol {
       <li>Educate newcomers by showing periods, epochs and genres in an intuitive and informative layout.</li>
       <li>Promote diversity: contemporary or lesser-known artists, non-white and non-male artists, more obscure instrumentation, etc.</li>
     </ol>
+
     <h2>Constraints:</h2>
-    <p>Design and development resources were focused on other company objectives, so we were unable to create new API endpoints or display content dynamically. The screen would have to remain static.</p>
+    <p>We were unable to create new API endpoints or display content dynamically, so the displayed content would have to be curated manually and remain static.<p>
+    <p>We were unable to simultenously update the experience on the mobile apps, which meant that the experience would be inconsistent across platforms. We understood, however, that listeners used the web and mobile apps in different contexts and with different goals. We hoped that improving the web experience would inform future changes on mobile.</p>
 
     <h2>Process:</h2>
-    <p>I mapped out a structure for the screen based on the core metadata aspects, then enlisted the content and editorial teams to create lists of artists and works according to their own criteria, based on their extensive knowledge and expertise. My screen designs were translated into code by the web engineers, and populated with the new content.</p>
+    <ol>
+      <li>I mapped out a new structure for the Browse screen based on the core metadata aspects — Composers, Performers, Periods, Genres, Instruments — each aspect having its own page in the new layout.</li>
+      <li>I created hi-fidelity screen designs for each page, populated with realistic content, in order to solicit useful feedback from our in-house classical music aficionados.</li>
+      <li>I presented the screen designs to diverse members of the team in order to validate my ideas and gather constructive feedback. The response was largely positive and many team members were energised by the prospect of improving the core experience.</li>
+      <li>I updated the designs based on the feedback, and spoke with the web engineers about the technical implementation. We were able to discuss responsive layouts and the trade-offs of hard-coding content quickly and informally, and they agreed to take on the work.</li>
+      <li>I then spoke with the leaders of the content and editorial teams to ask for their help in defining the right content to show. We identified specific team members with specialist domain knowledge who could build lists of artists and music according to their own criteria.</li>
+      <li>I created a template spreadsheet to allow the team to enter the content easily, with consistent formatting, with all the necessary data for the web engineers to implement easily.</li>
+      <li>The web engineers were able to begin building the pages while the content lists were being built. The whole development phase took around two weeks.</li>
+    </ol>
 
+    <h2>Composers</h2>
     <img src="img/01.png" />
+
+    <h2>Performers</h2>
     <img src="img/02.png" />
+
+    <h2>Periods</h2>
     <img src="img/03.png" />
     <img src="img/04.png" />
+
+    <h2>Genres</h2>
     <img src="img/05.png" />
     <img src="img/06.png" />
+
+    <h2>Instruments</h2>
     <img src="img/07.png" />
     <img src="img/08.png" />
   </body>
