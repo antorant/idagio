@@ -21,7 +21,7 @@ body {
   text-align: center;
 }
 
-h2, p, ol {
+h2, p, ol, ul, hr {
   margin-left: auto;
   margin-right: auto;
   max-width: 40rem;
@@ -35,7 +35,7 @@ p.large { font-size: 1.25rem; }
   <body>
     <h1>IDAGIO / Browse (Web)</h1>
 
-    <p class="large">I led an initiative to improve the neglected Browse experience on the IDAGIO web product, despite limited engineering resources, by producing compelling prototypes and collaborating with our in-house classical music experts.</p>
+    <p class="large">I led an initiative to improve the Browse experience on the IDAGIO web product, despite limited resources, by producing compelling prototypes and collaborating with our in-house classical music experts.</p>
     <img src="img/cover.png" />
     <p>The "Browse" screen was the second most-viewed screen in the web application, but had remained in MVP form — a short, static, hard-coded list of the most popular composers and performers — since the initial launch of the app.</p>
     <p><img src="img/before.png" /></p>
@@ -44,19 +44,26 @@ p.large { font-size: 1.25rem; }
     <p>Our two core user segments — classical music experts and non-experts — had different needs and expectations relating to the Browse experience. Experts wanted depth, diversity and expertise; non-experts needed orientation and easy entry points for exploration.</p>
     <p>I looked at each section of the screen through these two lenses, identifying changes we could make the experience better for both user segments.</p>
     <p><img src="img/matrix.png" /></p>
-    <p>The essence of the changes were: expand the lists, restructuring them in some cases, and include more direct links to music.</p>
 
-    <h2>Composer</h2>
+    <p>The solution:</p>
+    <ul>
+      <li>A view for each of the existing sections</li>
+      <li>Expand the lists</li>
+      <li>Restructure the lists</li>
+      <li>Include more direct links to music</li>
+    </ul>
+    <hr>
+    <p><strong>Composers</strong> view: show more famous composers as starting points for exploration, and more diverse and contemporary composers to demonstrate the depth of the catalogue.</p>
     <img src="img/01.png" />
-    <h2>Performers</h2>
+    <p><strong>Performers</strong> view: show more household names as starting points for exploration, and expose the second layer of metadata to distinguish different types of performers.</p>
     <img src="img/02.png" />
-    <h2>Periods</h2>
+    <p><strong>Periods</strong> view: show significant composers of each period on a timeline, demonstrating the metadata model and providing orientation.</p>
     <img src="img/03.png" />
     <img src="img/04.png" />
-    <h2>Genres</h2>
+    <p><strong>Genres</strong> view: list important and interesting works, each linking to a popular recording. Provide a short explanation of the terminology.</p>
     <img src="img/05.png" />
     <img src="img/06.png" />
-    <h2>Instruments</h2>
+    <p><strong>Instruments</strong> view: list important and interesting works, each linking to a popular recording.</p>
     <img src="img/07.png" />
     <img src="img/08.png" />
   </body>
