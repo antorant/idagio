@@ -7,12 +7,17 @@
   box-sizing: border-box;
 }
 
+html, body {
+
+}
+
 body {
-  background-color: #000;
+  background-color: #555;
   color: #fff;
   font-family: 'Inconsolata', monospace;
   margin: 4rem auto;
   max-width: 32rem;
+  padding: 1rem;
 }
 
 img {
@@ -31,15 +36,15 @@ h1 {
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 p {
@@ -61,3 +66,10 @@ li {
 a, a:link, a:visited {
   color: inherit;
 }
+
+.project-link {
+  display: block;
+  text-decoration: none;
+}
+
+.project-link:hover h3 { text-decoration: underline; }
